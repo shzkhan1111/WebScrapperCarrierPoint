@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using Newtonsoft.Json;
+
 
 namespace WebScrapperCarrierPoint
 {
@@ -65,8 +68,20 @@ namespace WebScrapperCarrierPoint
                 txtOriginCity.Text = config.OriginCity;
                 txtOriginState. Text = config.OriginState; 
                 txtDestinationCity.Text = config.DestinationCity;
-                txtDestinationState.Text = config.DestinationState; 
-                
+                txtDestinationState.Text = config.DestinationState;
+                string clientUrl = ConfigurationManager.AppSettings["clientUrl"];
+                string clientId = ConfigurationManager.AppSettings["clientId"];
+                string clientSecret = ConfigurationManager.AppSettings["clientSecret"];
+
+
+                string customerId = ConfigurationManager.AppSettings["customerclientId"];
+                string customerSecret = ConfigurationManager.AppSettings["customerclientSecret"];
+
+                lblClientURL.Text = clientUrl;
+                lblClientId.Text = clientId;
+                lblClientSecret.Text = clientSecret;
+                lblCustomerId.Text = customerId;
+                lblCustomerSecret.Text = customerSecret;
                // MessageBox.Show("Configurations loaded successfully!");
             }
             else

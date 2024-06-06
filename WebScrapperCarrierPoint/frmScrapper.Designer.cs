@@ -58,9 +58,13 @@
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblClientSecret = new System.Windows.Forms.Label();
+            this.lblClientId = new System.Windows.Forms.Label();
+            this.lblClientURL = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblClientURL = new System.Windows.Forms.Label();
+            this.lblCustomerSecret = new System.Windows.Forms.Label();
+            this.lblCustomerId = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -351,7 +355,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(45, 191);
+            this.groupBox1.Location = new System.Drawing.Point(45, 216);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -362,12 +366,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblClientSecret);
+            this.groupBox2.Controls.Add(this.lblClientId);
             this.groupBox2.Controls.Add(this.lblClientURL);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(45, 9);
+            this.groupBox2.Location = new System.Drawing.Point(45, 18);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -376,10 +382,43 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Client Info";
             // 
+            // lblClientSecret
+            // 
+            this.lblClientSecret.AutoSize = true;
+            this.lblClientSecret.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientSecret.Location = new System.Drawing.Point(186, 126);
+            this.lblClientSecret.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClientSecret.Name = "lblClientSecret";
+            this.lblClientSecret.Size = new System.Drawing.Size(40, 20);
+            this.lblClientSecret.TabIndex = 29;
+            this.lblClientSecret.Text = "N/A";
+            // 
+            // lblClientId
+            // 
+            this.lblClientId.AutoSize = true;
+            this.lblClientId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientId.Location = new System.Drawing.Point(186, 82);
+            this.lblClientId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClientId.Name = "lblClientId";
+            this.lblClientId.Size = new System.Drawing.Size(40, 20);
+            this.lblClientId.TabIndex = 28;
+            this.lblClientId.Text = "N/A";
+            // 
+            // lblClientURL
+            // 
+            this.lblClientURL.AutoSize = true;
+            this.lblClientURL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientURL.Location = new System.Drawing.Point(186, 39);
+            this.lblClientURL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClientURL.Name = "lblClientURL";
+            this.lblClientURL.Size = new System.Drawing.Size(40, 20);
+            this.lblClientURL.TabIndex = 27;
+            this.lblClientURL.Text = "N/A";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(22, 38);
+            this.label16.Location = new System.Drawing.Point(22, 35);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(120, 25);
@@ -388,6 +427,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblCustomerSecret);
+            this.groupBox3.Controls.Add(this.lblCustomerId);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -395,28 +436,38 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(567, 154);
+            this.groupBox3.Size = new System.Drawing.Size(567, 163);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Customer Info";
             // 
-            // lblClientURL
+            // lblCustomerSecret
             // 
-            this.lblClientURL.AutoSize = true;
-            this.lblClientURL.Enabled = false;
-            this.lblClientURL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClientURL.Location = new System.Drawing.Point(150, 42);
-            this.lblClientURL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblClientURL.Name = "lblClientURL";
-            this.lblClientURL.Size = new System.Drawing.Size(108, 30);
-            this.lblClientURL.TabIndex = 27;
-            this.lblClientURL.Text = "thistest";
+            this.lblCustomerSecret.AutoSize = true;
+            this.lblCustomerSecret.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerSecret.Location = new System.Drawing.Point(202, 89);
+            this.lblCustomerSecret.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustomerSecret.Name = "lblCustomerSecret";
+            this.lblCustomerSecret.Size = new System.Drawing.Size(40, 20);
+            this.lblCustomerSecret.TabIndex = 30;
+            this.lblCustomerSecret.Text = "N/A";
+            // 
+            // lblCustomerId
+            // 
+            this.lblCustomerId.AutoSize = true;
+            this.lblCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerId.Location = new System.Drawing.Point(202, 39);
+            this.lblCustomerId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustomerId.Name = "lblCustomerId";
+            this.lblCustomerId.Size = new System.Drawing.Size(40, 20);
+            this.lblCustomerId.TabIndex = 30;
+            this.lblCustomerId.Text = "N/A";
             // 
             // frmScrapper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1196, 692);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -469,6 +520,10 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblClientURL;
+        private System.Windows.Forms.Label lblClientSecret;
+        private System.Windows.Forms.Label lblClientId;
+        private System.Windows.Forms.Label lblCustomerSecret;
+        private System.Windows.Forms.Label lblCustomerId;
     }
 }
 
